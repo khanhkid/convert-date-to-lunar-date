@@ -1,0 +1,19 @@
+{
+    "name": "khanhkid/convert-date-to-lunar",
+    "description": "Convert English Date to Lunar Date for Vietnamese Infomation",
+    "type": "library",
+    "license": "none",
+    "autoload": {
+        "psr-4": {
+            "Khanhkid\\ConvertDateToLunar\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "khanhkid",
+        "email": "nhukhanhvd@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6.0"
+    }
+}
