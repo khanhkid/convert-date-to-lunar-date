@@ -1,6 +1,6 @@
 {
     "name": "khanhkid/convert-date-to-lunar",
-    "description": "Convert English Date to Lunar Date for Vietnamese Infomation",
+    "description": "Convert English Date to Lunar Date for Vietnamese Information",
     "type": "library",
     "license": "none",
     "autoload": {
