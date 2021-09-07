@@ -1,5 +1,5 @@
 <?php 
-require_once __DIR__ . '/src/Khanhkid/DateToLunarDate.php'; // Autoload files using Composer autoload
+require_once __DIR__ . '/../src/Khanhkid/DateToLunarDate.php'; // Autoload files using Composer autoload
 
 use Khanhkid\DateToLunarDate;
 
