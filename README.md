@@ -1,3 +1,46 @@
+## Convert English Date to Lunar Date
+
+I forked from https://github.com/isee15/Lunar-Solar-Calendar-Converter/tree/master/php
+After that Make it easier for use. Add some Class for more detail Zodiac (Vietnamese).
+
+    composer require khanhkid/convert-date-to-lunar
+
+How to use:
+
+    $englishDate = new EnglishDate();
+	$englishDate->EYear = date('Y');
+	$englishDate->EMonth = date('m');
+	$englishDate->EDay = date('d');
+	$lunarDate = LunarConverter::EnglishDateToLunarDate($englishDate);
+	var_dump($englishDate);
+	var_dump($lunarDate->getDate());
+	$englishDate = LunarConverter::LunarDateToEnglishDate($lunarDate);
+	var_dump($englishDate);
+	var_dump($lunarDate->getDate());
+
+Result:
+
+    object(Khanhkid\EnglishDate)#1 (3) {
+	  ["EDay"]=>
+	  string(2) "08"
+	  ["EMonth"]=>
+	  string(2) "09"
+	  ["EYear"]=>
+	  string(4) "2021"
+	}
+	string(10) "2021-08-02"
+	object(Khanhkid\EnglishDate)#3 (3) {
+	  ["EDay"]=>
+	  int(8)
+	  ["EMonth"]=>
+	  int(9)
+	  ["EYear"]=>
+	  int(2021)
+	}
+	string(10) "2021-08-02"
+
+## Vietnamese more detail for English Date
+
 
 How to use: 
 
