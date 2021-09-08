@@ -2,7 +2,7 @@
 
 //fork https://github.com/isee15/Lunar-Solar-Calendar-Converter/tree/master/php
 
-namespace Khanhkid\ConvertDateToLunar;
+namespace Khanhkid\DateConvertor;
 
 class LunarConverter
 {

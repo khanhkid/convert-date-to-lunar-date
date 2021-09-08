@@ -1,6 +1,6 @@
 <?php
 
-namespace Khanhkid;
+namespace Khanhkid\DateConvertor;
 
 class DateToLunarDate
 {
