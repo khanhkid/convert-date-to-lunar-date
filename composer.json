@@ -3,7 +3,7 @@
     "description": "Convert English Date to Lunar Date and revert",
     "type": "library",
     "keywords": ["date", "chinese-date", "chinese-calendar", "lunar-date", "lunar-calendar", "english-to-lunar"],
-    "homepage": "https://github.com/khanhkid/convert-date-to-lunar-date",
+    "homepage": "https://github.com/khanhkid/lunar-date-convertor",
     "license": "Apache-2.0",
     "autoload": {
         "psr-4": {
