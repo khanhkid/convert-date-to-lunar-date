@@ -385,16 +385,16 @@ class DateToLunarDate
         $moon = self::getMoonTimes($dd, $mm, $yy, 21.03, 105.85);
 
         return [
-            'input_duong' => date('Y-m-d', $intDate),
-            'output_am' => date('Y-m-d', strtotime($lunarYear.'-'.$lunarMonth.'-'.$lunarDay)),
+            'input_date' => date('Y-m-d', $intDate),
+            'output_lunar' => date('Y-m-d', strtotime($lunarYear.'-'.$lunarMonth.'-'.$lunarDay)),
             //'lunarLeap' => $lunarLeap,
-            'thu_en' => date('l', $intDate),
-            'thu_vi' => self::getDayName(date('l', $intDate)),
-            'thang_am' => self::getMonthName($lunarMonth - 1),
-            'thang_am_nhuan' => $nhuan,
-            'thang_am_du_thieu' => $tenthang,
-            'nam_duong_nhuan' => self::isSolarYearLeap($yy),
-            'nam_am_nhuan' => self::isLunarYearLeap($yy),
+            'weekday' => date('l', $intDate),
+            'weekday_vi' => self::getDayName(date('l', $intDate)),
+            'month_lunar' => self::getMonthName($lunarMonth - 1),
+            'month_lunar_leap' => $nhuan,
+            'month_lunar_full' => $tenthang, // 30 days
+            'year_leap' => self::isSolarYearLeap($yy),
+            'year_lunar_leap' => self::isLunarYearLeap($yy),
             'can_chi_nam' => self::getCanChiNam($lunarYear),
             'can_chi_thang' => self::getCanChiThang($lunarYear, $lunarMonth),
             'can_chi_ngay' => self::getCanChiNgay(self::jdFromDate($dd, $mm, $yy)),

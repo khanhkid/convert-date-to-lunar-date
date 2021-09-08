@@ -1,10 +1,19 @@
-<?php 
-require_once __DIR__ . '/../src/Khanhkid/DateToLunarDate.php'; // Autoload files using Composer autoload
+<?php
 
-use Khanhkid\DateToLunarDate;
+use Khanhkid\EnglishDate;
+use Khanhkid\LunarConverter;
+
+require_once __DIR__ . '/../src/Khanhkid/LunarConverter.php'; // Autoload files using Composer autoload
 
 
-$d = DateToLunarDate::getArrayDateInfo(date('d'), date('m'), date('Y'));
-echo '<pre>';
-print_r($d);
-echo '</pre>';
+$englishDate = new EnglishDate();
+$englishDate->EYear = date('Y');
+$englishDate->EMonth = date('m');
+$englishDate->EDay = date('d');
+$lunarDate = LunarConverter::EnglishDateToLunarDate($englishDate);
+
+var_dump($englishDate);
+var_dump($lunarDate->getDate());
+$englishDate = LunarConverter::LunarDateToEnglishDate($lunarDate);
+var_dump($englishDate);
+var_dump($lunarDate->getDate());
