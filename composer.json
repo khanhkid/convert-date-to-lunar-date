@@ -2,7 +2,9 @@
     "name": "khanhkid/convert-date-to-lunar",
     "description": "Convert English Date to Lunar Date for Vietnamese Information",
     "type": "library",
-    "license": "apache license 2.0",
+    "keywords": ["date", "chinese-date", "chinese-calendar", "lunar-date", "lunar-calendar", "english-to-lunar"],
+    "homepage": "https://github.com/khanhkid/convert-date-to-lunar-date",
+    "license": "Apache-2.0",
     "autoload": {
         "psr-4": {
             "Khanhkid\\ConvertDateToLunar\\": "src/"
