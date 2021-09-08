@@ -7,10 +7,7 @@ After that Make it easier for use. Add some Class for more detail Zodiac (Vietna
 
 How to use:
 
-    $englishDate = new EnglishDate();
-	$englishDate->EYear = date('Y');
-	$englishDate->EMonth = date('m');
-	$englishDate->EDay = date('d');
+    $englishDate = new EnglishDate(); //today
 	$lunarDate = LunarConverter::EnglishDateToLunarDate($englishDate);
 	var_dump($englishDate);
 	var_dump($lunarDate->getDate());
