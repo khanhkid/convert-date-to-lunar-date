@@ -3,7 +3,7 @@
 I forked from https://github.com/isee15/Lunar-Solar-Calendar-Converter/tree/master/php
 After that Make it easier for use. Add some Class for more detail Zodiac (Vietnamese).
 
-    composer require khanhkid/convert-date-to-lunar
+    composer require khanhkid/lunar-date-convertor
 
 How to use:
 
