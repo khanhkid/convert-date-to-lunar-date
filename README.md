@@ -7,13 +7,9 @@ After that Make it easier for use. Add some Class for more detail Zodiac (Vietna
 
 How to use:
 
-    $englishDate = new EnglishDate(); //today
-	$lunarDate = LunarConverter::EnglishDateToLunarDate($englishDate);
-	var_dump($englishDate);
-	var_dump($lunarDate->getDate());
-	$englishDate = LunarConverter::LunarDateToEnglishDate($lunarDate);
-	var_dump($englishDate);
-	var_dump($lunarDate->getDate());
+	$date = new \Khanhkid\DateConvertor\DateProcess('1967-04-14');
+	echo "Lunar Date:". $date->getLunarDate();
+	echo "English Date:". $date->getEnglishDate();
 
 Result:
 
@@ -41,7 +37,7 @@ Result:
 
 How to use: 
 
-    $result = DateToLunarDate::getArrayDateInfo(date('d'), date('m'), date('Y'));
+    $result = \Khanhkid\DateConvertor\DateToLunarDate::getArrayDateInfo(date('d'), date('m'), date('Y'));
     echo '<pre>'.print_r($d).'</pre>';
     
 Result on Vietnamese: 
