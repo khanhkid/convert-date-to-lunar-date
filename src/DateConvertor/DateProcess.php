@@ -25,7 +25,7 @@ class DateProcess
     
     public function getEnglishDate()
     {
-        $date = new EnglishDate($this->strDate);
+        $date = new LunarDate($this->strDate);
         return LunarConverter::LunarDateToEnglishDate($date)->getDate();
     }
 
